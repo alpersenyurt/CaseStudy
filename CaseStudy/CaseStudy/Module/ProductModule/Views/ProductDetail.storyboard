@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="FHc-bU-iK5">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Product Detail View Controller-->
+        <scene sceneID="7JC-wC-V2f">
+            <objects>
+                <viewController storyboardIdentifier="ProductDetailViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="FHc-bU-iK5" customClass="ProductDetailViewController" customModule="CaseStudy" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Hng-FE-XaE">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hCm-4R-tcX">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="375" placeholderIntrinsicHeight="30" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="bPx-ZG-Dha">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="30"/>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="bPx-ZG-Dha" firstAttribute="top" secondItem="hCm-4R-tcX" secondAttribute="top" id="8UJ-Oa-AEU"/>
+                                    <constraint firstItem="bPx-ZG-Dha" firstAttribute="width" secondItem="hCm-4R-tcX" secondAttribute="width" id="Eax-bM-XGe"/>
+                                    <constraint firstAttribute="trailing" secondItem="bPx-ZG-Dha" secondAttribute="trailing" id="Hdj-J0-sH2"/>
+                                    <constraint firstItem="bPx-ZG-Dha" firstAttribute="leading" secondItem="hCm-4R-tcX" secondAttribute="leading" id="gdm-OO-B9j"/>
+                                    <constraint firstAttribute="bottom" secondItem="bPx-ZG-Dha" secondAttribute="bottom" id="zp8-9Q-p7g"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="hCm-4R-tcX" firstAttribute="bottom" secondItem="wG2-U4-1hM" secondAttribute="bottom" id="D1b-r7-Nqi"/>
+                            <constraint firstItem="hCm-4R-tcX" firstAttribute="top" secondItem="Hng-FE-XaE" secondAttribute="top" id="Hfu-ZC-kGn"/>
+                            <constraint firstItem="hCm-4R-tcX" firstAttribute="leading" secondItem="wG2-U4-1hM" secondAttribute="leading" id="c15-nC-pVg"/>
+                            <constraint firstItem="hCm-4R-tcX" firstAttribute="trailing" secondItem="wG2-U4-1hM" secondAttribute="trailing" id="zXJ-sv-xmF"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="wG2-U4-1hM"/>
+                    </view>
+                    <connections>
+                        <outlet property="mainStackView" destination="bPx-ZG-Dha" id="vae-LC-E3H"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="guo-oH-8mJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="72.799999999999997" y="16.641679160419791"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Xew-Rp-Bs4">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Product Image View Controller-->
+        <scene sceneID="XOV-Y6-Ogc">
+            <objects>
+                <viewController storyboardIdentifier="ProductImageViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Xew-Rp-Bs4" customClass="ProductImageViewController" customModule="CaseStudy" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3AG-Cm-lia">
+                        <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="0RE-s0-nAV">
+                                <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="0RE-s0-nAV" secondAttribute="height" multiplier="3:2" id="8eS-lv-zSd"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="0RE-s0-nAV" firstAttribute="top" secondItem="3AG-Cm-lia" secondAttribute="top" id="gtR-Gq-5j4"/>
+                            <constraint firstItem="0RE-s0-nAV" firstAttribute="trailing" secondItem="PLd-hV-y5F" secondAttribute="trailing" id="iby-zu-BCe"/>
+                            <constraint firstItem="0RE-s0-nAV" firstAttribute="leading" secondItem="PLd-hV-y5F" secondAttribute="leading" id="pb9-2w-u8P"/>
+                            <constraint firstItem="0RE-s0-nAV" firstAttribute="bottom" secondItem="PLd-hV-y5F" secondAttribute="bottom" id="uvH-ON-CQA"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="PLd-hV-y5F"/>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="450" height="300"/>
+                    <connections>
+                        <outlet property="imageView" destination="0RE-s0-nAV" id="Ac6-AU-vhr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BKb-0o-hH9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="0.0" y="-431.78410794602701"/>
+        </scene>
+    </scenes>
+</document>

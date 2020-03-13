@@ -1,0 +1,15 @@
+{
+  "commitish" : "1.2.0",
+  "iOS" : [
+    {
+      "name" : "CircleProgressView",
+      "hash" : "5de135318721fd4b65371445d6b46f22f0ae179cc8f73efdd48de242237eb6b0",
+      "swiftToolchainVersion" : "5.1.3 (swiftlang-1100.0.282.1 clang-1100.0.33.15)"
+    },
+    {
+      "name" : "CircleProgressView",
+      "hash" : "5de135318721fd4b65371445d6b46f22f0ae179cc8f73efdd48de242237eb6b0",
+      "swiftToolchainVersion" : "5.1.3 (swiftlang-1100.0.282.1 clang-1100.0.33.15)"
+    }
+  ]
+}
