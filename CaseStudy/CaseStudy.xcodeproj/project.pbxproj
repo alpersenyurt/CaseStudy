@@ -176,7 +176,7 @@
 			children = (
 				5401B4FE24182572002236A4 /* AppDelegate.swift */,
 				D50C8B8F2418389E0079CC21 /* DataProvider */,
-				D50C8B94241839E30079CC21 /* DependencyProtocol */,
+				D50C8B94241839E30079CC21 /* Dependency */,
 				5401B526241827A5002236A4 /* Entities */,
 				5401B51E24182588002236A4 /* FileProvider */,
 				D50C8B9924183B790079CC21 /* Module */,
@@ -251,13 +251,13 @@
 			path = DataProvider;
 			sourceTree = "<group>";
 		};
-		D50C8B94241839E30079CC21 /* DependencyProtocol */ = {
+		D50C8B94241839E30079CC21 /* Dependency */ = {
 			isa = PBXGroup;
 			children = (
 				D50C8B95241839F70079CC21 /* DependencyProtocol.swift */,
 				D50C8B9724183A9E0079CC21 /* Dependencies.swift */,
 			);
-			path = DependencyProtocol;
+			path = Dependency;
 			sourceTree = "<group>";
 		};
 		D50C8B9924183B790079CC21 /* Module */ = {
