@@ -23,7 +23,7 @@ extension LoadingActivityPresenter where Self: UIViewController {
         if let activityIndicator = findActiveLoading() {
             activityIndicator.startAnimating()
         } else {
-            let activityIndicator = UIActivityIndicatorView(style: .whiteLarge)
+            let activityIndicator = UIActivityIndicatorView(style: .gray)
             activityIndicator.startAnimating()
             view.addSubview(activityIndicator)
 

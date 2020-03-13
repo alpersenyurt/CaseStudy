@@ -17,14 +17,7 @@ class ProductImageViewController: UIViewController, StatePresenter {
     }
     
     func updateImageView(for url: URL) {
-        imageView.kf.setImage(with: url) { result in
-            switch result {
-            case .success( _):
-                self.state = .success
-            case .failure(let error):
-                self.state = .error(error)
-            }
-        }
+        imageView.kf.setImage(with: url)
     }
 
     // Product Image View Controller is comformed StatePresenter protocol to mananage its state
